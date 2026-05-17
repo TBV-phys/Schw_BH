@@ -18,6 +18,9 @@ DerivedData/
 xcuserdata/
 *.xcuserstate
 
+# Homebrew metadata
+INSTALL_RECEIPT.json
+
 # Build outputs
 *.o
 *.obj
