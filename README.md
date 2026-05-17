@@ -15,7 +15,7 @@ where $r_s$ is the Schwarzschild radius (the event horizon), $c$ is the speed of
 
 The simulation code numerically evolves null geodesics restricted to the equatorial plane of the Schwarzschild geometry and visualises the resulting photon trajectories in real time.
 
-Due to the symmetries of the Schwarzschild spacetime, geodesics can be reduced to a system of first-order differential equations. However, rather than integrating these reduced orbital equations directly, the simulation evolves a regularised first-order dynamical system for the radial position, radial velocity, and angular coordinate. This avoids numerical stiffness and instabilities near turning points and close to the event horizon.
+Due to the symmetries of the Schwarzschild spacetime, geodesics can be reduced to a system of first-order differential equations. However, rather than integrating these reduced orbital equations directly, the simulation evolves a regularised first-order dynamical system for the radial position, $r$, radial velocity, $v_r$, and angular coordinate, $\theta$. This avoids numerical stiffness and instabilities near turning points and close to the event horizon.
 
 The system evolved by the integrator is
 
