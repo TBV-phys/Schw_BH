@@ -1,0 +1,87 @@
+{
+  "SPDXID": "SPDXRef-DOCUMENT",
+  "spdxVersion": "SPDX-2.3",
+  "name": "SBOM-SPDX-glfw-3.4",
+  "creationInfo": {
+    "created": "2026-01-31T00:17:09Z",
+    "creators": [
+      "Tool: https://github.com/Homebrew/brew@5.0.12"
+    ]
+  },
+  "dataLicense": "CC0-1.0",
+  "documentNamespace": "https://formulae.brew.sh/spdx/glfw-3.4.json",
+  "documentDescribes": [
+    "SPDXRef-Archive-glfw-src",
+    "SPDXRef-Compiler",
+    "SPDXRef-Bottle-glfw"
+  ],
+  "files": [],
+  "packages": [
+    {
+      "SPDXID": "SPDXRef-Archive-glfw-src",
+      "name": "glfw",
+      "versionInfo": "3.4",
+      "filesAnalyzed": false,
+      "licenseDeclared": "NOASSERTION",
+      "builtDate": "2024-02-23 11:45:31 UTC",
+      "licenseConcluded": "Zlib",
+      "downloadLocation": "https://github.com/glfw/glfw/archive/refs/tags/3.4.tar.gz",
+      "copyrightText": "NOASSERTION",
+      "externalRefs": [],
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "c038d34200234d071fae9345bc455e4a8f2f544ab60150765d7704e08f3dac01"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-Compiler",
+      "name": "clang",
+      "versionInfo": "26.2",
+      "filesAnalyzed": false,
+      "licenseDeclared": "NOASSERTION",
+      "licenseConcluded": "NOASSERTION",
+      "copyrightText": "NOASSERTION",
+      "downloadLocation": "NOASSERTION",
+      "checksums": [],
+      "externalRefs": []
+    },
+    {
+      "SPDXID": "SPDXRef-Bottle-glfw",
+      "name": "glfw",
+      "versionInfo": "3.4",
+      "filesAnalyzed": false,
+      "licenseDeclared": "NOASSERTION",
+      "builtDate": "2024-02-23 11:45:31 UTC",
+      "licenseConcluded": "Zlib",
+      "downloadLocation": "https://ghcr.io/v2/homebrew/core/glfw/blobs/sha256:b6f994a80eff1c192e58bde265e72440f065899224dba202d1c2775baf6f46b9",
+      "copyrightText": "NOASSERTION",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceLocator": "pkg:brew/homebrew/core/glfw@3.4",
+          "referenceType": "purl"
+        }
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "b6f994a80eff1c192e58bde265e72440f065899224dba202d1c2775baf6f46b9"
+        }
+      ]
+    }
+  ],
+  "relationships": [
+    {
+      "spdxElementId": "SPDXRef-File-glfw",
+      "relationshipType": "PACKAGE_OF",
+      "relatedSpdxElement": "SPDXRef-Archive-glfw-src"
+    },
+    {
+      "spdxElementId": "SPDXRef-Compiler",
+      "relationshipType": "BUILD_TOOL_OF",
+      "relatedSpdxElement": "SPDXRef-Package-glfw-src"
+    }
+  ]
+}
