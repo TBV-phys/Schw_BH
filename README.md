@@ -1,5 +1,11 @@
 # Interactive simulation framework for photons around a Schwarzschild black hole
 
+<p align="center">
+  <img src="assets/gifBH_1.gif" width="300">
+  &nbsp;&nbsp;&nbsp;
+  <img src="assets/gifBH_2.gif" width="300">
+</p>
+
 This project implements a modular  simulation framework for photon trajectories around a Schwarzschild black hole.
 
 The spacetime geometry is described by the Schwarzschild line element
