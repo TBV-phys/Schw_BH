@@ -1,11 +1,5 @@
 # Interactive simulation framework for photons around a Schwarzschild black hole
 
-<p align="center">
-  <img src="assets/gifBH_1.gif" width="300">
-  &nbsp;&nbsp;&nbsp;
-  <img src="assets/gifBH_2.gif" width="300">
-</p>
-
 This project implements a modular  simulation framework for photon trajectories around a Schwarzschild black hole.
 
 The spacetime geometry is described by the Schwarzschild line element
@@ -27,16 +21,9 @@ The system evolved by the integrator is
 
 $$
 \begin{align}
-\dot r & = v_r, \\
-\dot v_r & =
-\frac{1}{r^2}\left(1-\frac{r_s}{r}\right)
-+
-\frac{b^2}{r^4}
-\left(1-\frac{r_s}{r}\right)^2
-\left(r-\frac{5}{2}r_s\right), \\
-\dot\theta & =
--\frac{b}{r^2}
-\left(1-\frac{r_s}{r}\right).
+\dot r & = \ v_r, \\
+\dot v_r & = \ \frac{1}{r^2}\left(1-\frac{r_s}{r}\right)+ \frac{b^2}{r^4}\left(1-\frac{r_s}{r}\right)^2\left(r-\frac{5}{2}r_s\right), \\
+\dot\theta & = \ -\frac{b}{r^2}\left(1-\frac{r_s}{r}\right).
 \end{align}
 $$
 
@@ -139,6 +126,18 @@ The current design keeps the main physical, numerical, and rendering components 
 - Trajectory trails are stored using a fixed-size circular-buffers, avoiding unbounded memory growth during long simulations.
 - Rendering is kept separate from the physical evolution, with dedicated drawing routines for grids, horizons, photons, and trajectory trails.
 - Mouse callbacks are used to generate photon bursts interactively from screen coordinates, allowing real-time exploration of different initial conditions.
+
+## Examples
+
+<p align="center">
+  <img src="assets/gifBH_1.gif" width="350">
+  &nbsp;&nbsp;&nbsp;
+  <img src="assets/gifBH_2.gif" width="350"><br>
+  
+  <em>
+    Photon scattering and capture near the event horizon. The black hole is represented with a reddish disc with  radius equal to the event horizon. The dashed circle marks the photon pshere.  Left: photon ray bundle incident from the left and <code>photonBurst = 15</code>. Right: <code>photonBurst = 1500</code>.
+  </em>
+</p>
 
 
 ## Notes
